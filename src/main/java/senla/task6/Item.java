@@ -1,4 +1,4 @@
-package com.company.task6;
+package senla.task6;
 
 /**
  * The type Item.
@@ -13,7 +13,7 @@ public class Item {
      * @param price  the price
      * @param weight the weight
      */
-    public Item(double price, double weight) {
+    Item(double price, double weight) {
         this.price = price;
         this.weight = weight;
     }
@@ -31,7 +31,7 @@ public class Item {
      *
      * @return the price
      */
-    public double getPrice() {
+    double getPrice() {
         return price;
     }
 
@@ -49,7 +49,7 @@ public class Item {
      *
      * @return the weight
      */
-    public double getWeight() {
+    double getWeight() {
         return weight;
     }
 

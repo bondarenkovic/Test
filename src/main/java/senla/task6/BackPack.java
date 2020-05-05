@@ -1,4 +1,4 @@
-package com.company.task6;
+package senla.task6;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class BackPack {
      *
      * @param capacity the capacity
      */
-    public BackPack(double capacity) {
+    BackPack(double capacity) {
         this.capacity = capacity;
     }
 
@@ -56,12 +56,12 @@ public class BackPack {
      *
      * @param items the items
      */
-    public void allSets(List<Item> items) {
+    void allSets(List<Item> items) {
         if (items.size() > 0) {
             checkSet(items);
 
             for (int i = 0; i < items.size(); i++) {
-                List<Item> newSet = new ArrayList<Item>(items);
+                List<Item> newSet = new ArrayList<>(items);
                 newSet.remove(i);
                 allSets(newSet);
             }
@@ -74,7 +74,7 @@ public class BackPack {
      *
      * @return the best items
      */
-    public List<Item> getBestItems() {
+    List<Item> getBestItems() {
         return bestItems;
     }
 

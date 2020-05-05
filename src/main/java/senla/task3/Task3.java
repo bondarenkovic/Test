@@ -1,4 +1,4 @@
-package com.company.task3;
+package senla.task3;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,11 +11,9 @@ import java.util.stream.Collectors;
  */
 public class Task3 {
     /**
-     * The entry point of application.
-     *
-     * @param args the input arguments
+     * Start task 3.
      */
-    public static void main(String[] args) {
+    public static void startTask3() {
         System.out.println("Please input any sentence:");
         Scanner in = new Scanner(System.in);
         String input = in.nextLine();
@@ -28,7 +26,11 @@ public class Task3 {
 
     private static ArrayList<String> convert(String input) {
         input = input.replaceAll("[^A-Za-zА-Яа-яё\\s]", "");
-        return new ArrayList<>(Arrays.asList(input.split("\\s+")));
+        if (input.isBlank()) {
+            return new ArrayList<>();
+        } else {
+            return new ArrayList<>(Arrays.asList(input.split("\\s+")));
+        }
     }
 
     private static List<String> sort(List<String> inputList) {

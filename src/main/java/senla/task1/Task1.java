@@ -1,4 +1,4 @@
-package com.company.task1;
+package senla.task1;
 
 import java.util.Scanner;
 
@@ -7,11 +7,9 @@ import java.util.Scanner;
  */
 public class Task1 {
     /**
-     * The entry point of application.
-     *
-     * @param args the input arguments
+     * Start task 1.
      */
-    public static void main(String[] args) {
+    public static void startTask1() {
         int input = numberCheck(new Scanner(System.in));
         isEven(input);
         isPrime(input);

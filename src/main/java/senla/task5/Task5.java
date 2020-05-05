@@ -1,4 +1,4 @@
-package com.company.task5;
+package senla.task5;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,11 +9,9 @@ import java.util.Scanner;
  */
 public class Task5 {
     /**
-     * The entry point of application.
-     *
-     * @param args the input arguments
+     * Start task 5.
      */
-    public static void main(String[] args) {
+    public static void startTask5 () {
         int input = numberCheck(new Scanner(System.in));
         System.out.println(palindrom(input));
     }

@@ -1,4 +1,4 @@
-package com.company.task2;
+package senla.task2;
 
 import java.util.Scanner;
 
@@ -7,11 +7,9 @@ import java.util.Scanner;
  */
 public class Task2 {
     /**
-     * The entry point of application.
-     *
-     * @param args the input arguments
+     * Start task 2.
      */
-    public static void main(String[] args) {
+    public static void startTask2() {
         int input1 = numberCheck(new Scanner(System.in), "Please input any integer:");
         int input2 = numberCheck(new Scanner(System.in), "Please input one more integer:");
         lcm(input1, input2);

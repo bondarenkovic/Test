@@ -1,4 +1,4 @@
-package com.company.task4;
+package senla.task4;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -8,17 +8,15 @@ import java.util.Scanner;
  */
 public class Task4 {
     /**
-     * The entry point of application.
-     *
-     * @param args the input arguments
+     * Start task 4.
      */
-    public static void main(String[] args) {
+    public static void startTask4() {
         System.out.println("Please input any sentence:");
         Scanner in = new Scanner(System.in);
         String sentence = in.nextLine();
         System.out.println("Please input any word:");
         String word = in.nextLine();
-        System.out.println("Word " + word + " can be found in text for " + contain(sentence, word) + " times");
+        System.out.println("Word \"" + word + "\" can be found in text for " + contain(sentence, word) + " time(s)");
     }
 
     private static long contain(String s, String w) {
