@@ -22,12 +22,10 @@ public class Task5 {
             System.out.println("Please input any integer more than 0 and not more than 100 :");
             try {
                 input = Integer.parseInt(scanner.nextLine());
-                if (input > 100) throw new WrongNumberException();
+                if (input > 100) throw new WrongNumberException("More than 0, but not more than 100");
                 break;
-            } catch (NumberFormatException e) {
-                System.out.println("Wrong input");
-            } catch (WrongNumberException e) {
-                System.out.println("More than 0, but not more than 100");
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
         }
         return input;

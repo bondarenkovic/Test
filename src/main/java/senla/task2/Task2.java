@@ -22,12 +22,10 @@ public class Task2 {
             System.out.println(s);
             try {
                 input = Integer.parseInt(scanner.nextLine());
-                if (input == 0) throw new ZeroException();
+                if (input == 0) throw new ZeroException("Not zero please");
                 break;
-            } catch (NumberFormatException e) {
-                System.out.println("Wrong input");
-            } catch (ZeroException e) {
-                System.out.println("Not zero please");
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
         }
         return input;
